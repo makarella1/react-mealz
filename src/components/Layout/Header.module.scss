@@ -1,0 +1,15 @@
+.header {
+  @apply fixed top-0 left-0 bg-red-800 w-full h-[5rem] z-20 shadow-2xl px-[10%] flex justify-between items-center text-white;
+
+  .title {
+    @apply font-bold text-3xl;
+  }
+}
+
+.image-container {
+  @apply w-[100%] h-[25rem] z-0;
+
+  img {
+    @apply w-[100%] h-[100%] object-cover -rotate-3 -translate-x-1 -translate-y-12;
+  }
+}

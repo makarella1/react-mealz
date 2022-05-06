@@ -1,0 +1,15 @@
+.item {
+  @apply flex justify-between items-center mb-3 border-b border-gray-400;
+
+  .item-title {
+    @apply font-bold text-xl;
+  }
+
+  .item-price {
+    @apply mb-2 text-2xl text-red-600 font-semibold;
+  }
+
+  .button {
+    @apply bg-[#4d1601] px-4 py-2 rounded-2xl;
+  }
+}

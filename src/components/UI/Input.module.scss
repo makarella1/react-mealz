@@ -1,0 +1,9 @@
+.input {
+  label {
+    @apply font-semibold text-lg mr-2;
+  }
+
+  input {
+    @apply border border-gray-400 rounded-lg w-10;
+  }
+}

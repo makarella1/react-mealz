@@ -1,0 +1,27 @@
+.cart-items {
+  @apply overflow-y-scroll max-h-96;
+}
+
+.total {
+  @apply flex justify-between my-4;
+
+  span {
+    @apply font-bold text-2xl;
+  }
+}
+
+.actions {
+  @apply flex justify-end;
+
+  button {
+    @apply px-6 py-2 border border-[#8a2b06] rounded-2xl ml-3 font-semibold hover:bg-[#5a1a01] hover:text-white;
+  }
+
+  .order-btn {
+    @apply text-white bg-[#8a2b06];
+  }
+
+  .close-btn {
+    @apply text-[#8a2b06];
+  }
+}

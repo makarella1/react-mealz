@@ -1,0 +1,27 @@
+.item {
+  @apply flex items-center justify-between p-6 border-b-2 border-red-700;
+
+  .summary {
+    @apply flex flex-col w-40;
+
+    .title {
+      @apply text-2xl font-semibold mb-3;
+    }
+
+    .price {
+      @apply text-xl font-semibold text-red-600;
+    }
+
+    .amount {
+      @apply self-end font-bold border border-gray-700 px-2 rounded-xl;
+    }
+  }
+
+  .actions {
+    @apply flex justify-between;
+
+    button {
+      @apply px-4 py-2 border border-[#8a2b06] rounded-xl font-bold mr-10 hover:bg-[#8a2b06] hover:text-white;
+    }
+  }
+}

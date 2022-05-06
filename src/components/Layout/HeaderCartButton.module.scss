@@ -1,0 +1,15 @@
+.cart {
+  @apply flex bg-[#4d1601] px-10 py-3 items-center justify-around rounded-2xl hover:bg-[#2c0d00];
+
+  .cart-title {
+    @apply font-semibold mx-3;
+  }
+
+  .cart-amount {
+    @apply bg-red-800 px-4 py-1 rounded-2xl font-semibold;
+  }
+}
+
+.animation {
+  @apply animate-bump;
+}
