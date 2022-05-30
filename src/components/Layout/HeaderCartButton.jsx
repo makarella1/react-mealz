@@ -1,9 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from 'react';
 
-import { FaShoppingCart } from "react-icons/fa";
-import styles from "./HeaderCartButton.module.scss";
+import { FaShoppingCart } from 'react-icons/fa';
+import styles from './HeaderCartButton.module.scss';
 
-import { CartContext } from "../../store/cart-context";
+import { CartContext } from '../../store/cart-context';
 
 export const HeaderCartButton = ({ onCartClicked }) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
@@ -29,7 +29,7 @@ export const HeaderCartButton = ({ onCartClicked }) => {
   }, [items]);
 
   const btnStyles = `${styles.cart} ${
-    btnIsHighlighted ? styles.animation : ""
+    btnIsHighlighted ? styles.animation : ''
   }`;
 
   return (
@@ -37,8 +37,8 @@ export const HeaderCartButton = ({ onCartClicked }) => {
       <span>
         <FaShoppingCart />
       </span>
-      <span className={styles["cart-title"]}>Your Cart</span>
-      <div className={styles["cart-amount"]}>{numberOfCartItems}</div>
+      <span className={styles['cart-title']}>Your Cart</span>
+      <div className={styles['cart-amount']}>{numberOfCartItems}</div>
     </button>
   );
 };

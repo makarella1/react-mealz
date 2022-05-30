@@ -2,14 +2,14 @@
   @apply flex items-center justify-between p-6 border-b-2 border-red-700;
 
   .summary {
-    @apply flex flex-col w-40;
+    @apply md:flex flex-col w-40;
 
     .title {
-      @apply text-2xl font-semibold mb-3;
+      @apply text-xl md:text-2xl font-semibold mb-3;
     }
 
     .price {
-      @apply text-xl font-semibold text-red-600;
+      @apply block text-lg md:text-xl font-semibold text-red-600;
     }
 
     .amount {
@@ -18,10 +18,10 @@
   }
 
   .actions {
-    @apply flex justify-between;
+    @apply flex md:justify-between;
 
     button {
-      @apply px-4 py-2 border border-[#8a2b06] rounded-xl font-bold mr-10 hover:bg-[#8a2b06] hover:text-white;
+      @apply px-4 py-2 border border-[#8a2b06] rounded-xl font-bold mr-2 md:mr-10 hover:bg-[#8a2b06] hover:text-white;
     }
   }
 }

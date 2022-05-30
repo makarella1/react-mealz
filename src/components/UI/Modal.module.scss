@@ -3,5 +3,5 @@
 }
 
 .modal-content {
-  @apply bg-white left-[25%] fixed w-2/4 top-1/4 z-50 rounded-lg px-4 py-2 animate-modalAppear;
+  @apply w-11/12 left-[4%] lg:left-[10%] lg:w-4/5 bg-white fixed top-[12.5%] z-50 rounded-lg px-4 py-2 animate-modalAppear;
 }

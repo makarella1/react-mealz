@@ -1,5 +1,5 @@
 .cart-items {
-  @apply overflow-y-scroll max-h-96;
+  @apply overflow-y-scroll overflow-x-hidden max-h-28 sm:max-h-32 md:max-h-40 lg:max-h-56;
 }
 
 .total {
@@ -11,8 +11,6 @@
 }
 
 .actions {
-  @apply flex justify-end;
-
   button {
     @apply px-6 py-2 border border-[#8a2b06] rounded-2xl ml-3 font-semibold hover:bg-[#5a1a01] hover:text-white;
   }

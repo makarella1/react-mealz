@@ -2,9 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  @apply overflow-x-hidden m-0;
+}
 
-  @apply bg-neutral-800 overflow-x-hidden;
+body {
+  font-family: 'Ubuntu', sans-serif;
+
+  @apply bg-neutral-800;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-800 rounded-xl;
 }

@@ -1,9 +1,10 @@
-import { CartContext } from "./cart-context";
-import { useReducer } from "react";
+import { CartContext } from './cart-context';
+import { useReducer } from 'react';
 
 const CART_ACTIONS = {
-  ADD: "ADD",
-  REMOVE: "REMOVE",
+  ADD: 'ADD',
+  REMOVE: 'REMOVE',
+  CLEAR: 'CLEAR',
 };
 
 const defaultCartState = {
@@ -28,7 +29,7 @@ const cartReducer = (state, action) => {
       if (existingCartItem) {
         const updatedItem = {
           ...existingCartItem,
-          amount: item.amount + existingCartItem.amount,
+          amount: 1 + existingCartItem.amount,
         };
         updatedItems = [...state.items];
         updatedItems[existingCartItemIndex] = updatedItem;
@@ -67,6 +68,9 @@ const cartReducer = (state, action) => {
         totalAmount: updatedTotalAmount,
       };
 
+    case CART_ACTIONS.CLEAR:
+      return defaultCartState;
+
     default:
       return defaultCartState;
   }
@@ -83,11 +87,16 @@ export const CartProvider = ({ children }) => {
     dispatch({ type: CART_ACTIONS.REMOVE, payload: { id } });
   };
 
+  const clearCartHandler = () => {
+    dispatch({ type: CART_ACTIONS.CLEAR, payload: {} });
+  };
+
   const cartContext = {
     items: cartItems.items,
     totalAmount: cartItems.totalAmount,
     addItem: addItemHandler,
     removeItem: removeItemHandler,
+    clearCart: clearCartHandler,
   };
 
   return (

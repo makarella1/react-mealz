@@ -1,8 +1,8 @@
 .header {
-  @apply fixed top-0 left-0 bg-red-800 w-full h-[5rem] z-20 shadow-2xl px-[10%] flex justify-between items-center text-white;
+  @apply fixed top-0 left-0 bg-red-800 w-full z-20 shadow-2xl px-[5%] md:px-[10%] h-20 flex justify-between items-center text-white;
 
   .title {
-    @apply font-bold text-3xl;
+    @apply font-bold text-lg sm:text-xl lg:text-3xl;
   }
 }
 

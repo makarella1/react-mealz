@@ -1,6 +1,6 @@
-import mealsImg from "../../assets/meals.jpg";
-import styles from "./Header.module.scss";
-import { HeaderCartButton } from "./HeaderCartButton";
+import mealsImg from '../../assets/meals.jpg';
+import styles from './Header.module.scss';
+import { HeaderCartButton } from './HeaderCartButton';
 
 export const Header = ({ onCartOpened }) => {
   return (
@@ -9,8 +9,8 @@ export const Header = ({ onCartOpened }) => {
         <h1 className={styles.title}>ReactMealz</h1>
         <HeaderCartButton onCartClicked={onCartOpened} />
       </header>
-      <div className={styles["image-container"]}>
-        <img src={mealsImg} />
+      <div className={styles['image-container']}>
+        <img src={mealsImg} alt="Meals" />
       </div>
     </>
   );

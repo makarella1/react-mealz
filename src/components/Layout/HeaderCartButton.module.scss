@@ -1,12 +1,12 @@
 .cart {
-  @apply flex bg-[#4d1601] px-10 py-3 items-center justify-around rounded-2xl hover:bg-[#2c0d00];
+  @apply flex bg-[#4d1601] items-center justify-around rounded-2xl hover:bg-[#2c0d00] px-2 py-1 md:px-4 py-2 lg:px-10 py-3;
 
   .cart-title {
-    @apply font-semibold mx-3;
+    @apply hidden sm:inline font-semibold mx-3;
   }
 
   .cart-amount {
-    @apply bg-red-800 px-4 py-1 rounded-2xl font-semibold;
+    @apply bg-red-800 px-4 py-1 rounded-2xl font-semibold ml-4 sm:ml-0;
   }
 }
 

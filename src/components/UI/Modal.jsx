@@ -1,15 +1,15 @@
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom';
 
-import styles from "./Modal.module.scss";
+import styles from './Modal.module.scss';
 
-const modalRoot = document.getElementById("modal");
+const modalRoot = document.getElementById('modal');
 
 const Backdrop = ({ onCartClosed }) => {
   return <div className={styles.backdrop} onClick={onCartClosed}></div>;
 };
 
 const ModalContent = ({ children }) => {
-  return <div className={styles["modal-content"]}>{children}</div>;
+  return <div className={styles['modal-content']}>{children}</div>;
 };
 
 export const Modal = ({ children, onBackdropClicked }) => {

@@ -1,4 +1,4 @@
-import styles from "./CartItem.module.scss";
+import styles from './CartItem.module.scss';
 
 export const CartItem = ({ name, price, amount, onAdd, onRemove }) => {
   const convertedPrice = `$${price.toFixed(2)}`;
